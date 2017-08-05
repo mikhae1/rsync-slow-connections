@@ -9,7 +9,7 @@ LOCK_FILE=/home/user/orchid-rsync/rsync.lock
 SRC_DIR=/home/user/orchid-rsync/send
 SRC_MASK='*.mp3'
 
-DST_SRV=rsync@uds-orchid-dev.moscow.eurochem.ru
+DST_SRV=rsync@remote_srv.local
 DST_DIR=/home/rsync/synced_files
 
 run=false
