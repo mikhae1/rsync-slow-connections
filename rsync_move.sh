@@ -2,11 +2,11 @@
 
 set -eo pipefail
 
-FLOCK_TIMEOUT=700
-RSYNC_TIMEOUT=600
-LOCK_FILE=/home/user/orchid-rsync/rsync.lock
+FLOCK_TIMEOUT=${FLOCK_TIMEOUT:-700}
+RSYNC_TIMEOUT=${RSYNC_TIMEOUT:-600}
+LOCK_FILE=/tmp/rsync.lock
 
-SRC_DIR=/home/user/orchid-rsync/send
+SRC_DIR=/home/user/to_send
 SRC_MASK='*.mp3'
 
 DST_SRV=rsync@remote_srv.local
